@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .menu button:hover {
+            background: grey;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Menu</h1>
+    <div class="menu">
+        <button onclick="openGame('tetris.html')">Play Tetris</button>
+        <button onclick="openGame('galaxy.html')">Play Galaxy Shooter</button>
+        <button onclick="openGame('pong.html')">Play Pong</button>
+    </div>
+
+    <script>
+        function openGame(game) {
+            window.location.href = game;
+        }
+    </script>
+</body>
+</html>
