@@ -3,60 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Menu</title>
+    <title>CV de Churumbel</title>
     <style>
         body {
-            margin: 0;
-            background: black;
-            color: white;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
             text-align: center;
         }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
-
-        .menu button {
-            padding: 10px 20px;
-            font-size: 1.2em;
-            background: white;
-            color: black;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 1.5rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
             border: none;
+            padding: 10px 15px;
             cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
+            border-radius: 5px;
         }
-
-        .menu button:hover {
-            background: grey;
-            transform: scale(1.05);
+        .btn-submit:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Game Menu</h1>
-    <div class="menu">
-        <button onclick="openGame('tetris.html')">Play Tetris</button>
-        <button onclick="openGame('galaxy.html')">Play Galaxy Shooter</button>
-        <button onclick="openGame('pong.html')">Play Pong</button>
-    </div>
 
-    <script>
-        function openGame(game) {
-            window.location.href = game;
-        }
-    </script>
+<header>
+    <h1>Churumbel de Málaga</h1>
+    <p>"Desarrollador en formación con ganas de aprender y crecer"</p>
+    <nav>
+        <ul>
+            <li><a href="#info-personal">Información Personal</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="info-personal">
+    <h2>Información Personal</h2>
+    <img src="churumbé.jpg" alt="Foto de Churumbel" class="profile-img">
+    <p><strong>Nombre:</strong> Churumbel de Málaga</p>
+    <p><strong>Dirección:</strong> Calle de las Albahacas, 10, Málaga</p>
+    <p><strong>Teléfono:</strong> 600 123 456</p>
+    <p><strong>Correo:</strong> churumbel@correo.com</p>
+    <p><strong>Redes Sociales:</strong>
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a> |
+        <a href="#">Instagram</a>
+    </p>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy un apasionado del desarrollo web y la tecnología. Actualmente me estoy formando como desarrollador, con interés en aprender HTML, CSS, y JavaScript. Me encanta trabajar en equipo y afrontar nuevos retos tecnológicos.</p>
+</section>
+
+<section id="formacion">
+    <h2>Formación Académica</h2>
+    <ul>
+        <li>2024 - Ciclo Medio en Informática, Instituto de Málaga</li>
+        <li>2022 - Curso de Introducción a la Programación, Aula Mentor</li>
+        <li>2020 - Graduado en ESO, IES Los Olivos, Málaga</li>
+    </ul>
+</section>
+
+<section id="experiencia">
+    <h2>Experiencia Profesional</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Puesto</th>
+                <th>Empresa</th>
+                <th>Año</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prácticas de Soporte Técnico</td>
+                <td>Empresa Tech Málaga</td>
+                <td>2023</td>
+                <td>Resolución de incidencias y configuración de equipos.</td>
+            </tr>
+            <tr>
+                <td>Proyecto Escolar</td>
+                <td>IES Los Olivos</td>
+                <td>2022</td>
+                <td>Creación de una página web para un evento local.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML - Básico/Intermedio</li>
+        <li>CSS - Intermedio</li>
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+    </ul>
+</section>
+
+<section id="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Churumbel de Málaga. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
